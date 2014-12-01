@@ -1,0 +1,38 @@
+\documentclass{article} 
+\usepackage{hyperref}  % seems to be important for multicols
+\pagenumbering{gobble}  % disable page numbering
+\usepackage{multicol}  % split page in two parts
+%%\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%%\usepackage[margin=0.2cm]{geometry}
+\usepackage{parskip}
+\usepackage[paperwidth=11in, 
+            paperheight=8.5in,
+            left=0.05in,
+            right=0.05in,
+            top=0.05in,
+            bottom=0.05in]{geometry}
+%\setlength\columnseprule{.4pt}
+
+\begin{document}
+
+\begin{minipage}[b]{0.25\textwidth}
+
+\begin{multicols}{2}
+    Roger Traylor\\
+    ND7PA\\
+    6800 NW Quailwood Dr.\\
+    Albany, OR 97321-9300\\
+    USA\\
+    \columnbreak\par
+    \hfill\framebox(40,50){\scriptsize Postage}\par
+    \vspace{0.25\textheight}
+    \rule{5.8cm}{0.01cm}\vspace*{1cm}\\ % Name
+    \rule{5.8cm}{0.01cm}\vspace*{1cm}\\ % Street + Nr
+    \rule{2.2cm}{0.01cm}\hspace*{0.2cm}\rule{3.4cm}{0.01cm}\vspace*{1cm}\\ % zip code + town
+    \rule{5.8cm}{0.01cm}\\ % country
+\end{multicols} 
+
+\end{minipage}
+\end{document}
+

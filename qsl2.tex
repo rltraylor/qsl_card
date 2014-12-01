@@ -1,0 +1,108 @@
+% simple QSL Card design with LaTeX. Put this together in a few minutes, needs
+% some work done!
+% 
+% This file is published into the public domain by Fabian Kurz, DJ1YFK, hoping
+% it might be helpful. No warranties bla bla bla.
+
+\documentclass{article}
+\pagestyle{empty}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage[paperwidth=11in, 
+            paperheight=8.5in,
+            left=0.05in,
+            right=0.05in,
+            top=0.05in,
+            bottom=0.05in]{geometry}
+\usepackage{picture,xcolor}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\usepackage{transparent}
+\usepackage[percent]{overpic}
+%\usepackage[abs]{overpic}
+
+\begin{document}
+\setlength{\tabcolsep}{10.75pt}
+\setlength{\unitlength}{0.05in}
+
+\begin{minipage}[b]{0.25\textwidth}
+%%
+\begin{overpic}[height=3.75in,width=5.40in,scale=0.090,unit=0.05in]{CE-009.jpg}
+\put(1,60.5)  {\begin{minipage}[b]{0.45\textwidth}{\Huge{\textbf{ND7PA}}\\
+\normalsize{Roger L. Traylor}} \end{minipage}}
+\put(80,57.5){\begin{minipage}[b]{0.45\textwidth}{\footnotesize{QRP ARCI 8417\\
+GQRP: 8396\\
+Grid Square: CN84jq\\
+Benton County, OR}} \end{minipage}}
+%                      border    background
+\put(77,2){\fcolorbox{white!80}{gray!10}{\parbox{0.40\linewidth}{\footnotesize{Photo: W7O/CE-009}}}}
+\put(0.05,-5){\begin{tabular}{| c | c | c | c | c | c | c | c |}
+  \hline
+  Station & Date &  Time (UTC) &  MHz &  Mode & RS(T) & Power &  QSL\\[4ex]
+  \hline
+\end{tabular}}
+\end{overpic}
+\end{minipage}
+\hspace{2.67in}
+%%
+\begin{minipage}[b]{0.25\textwidth}
+\begin{overpic}[height=3.75in,width=5.40in,scale=0.090,unit=0.05in]{CE-009.jpg}
+\put(1,60.5)  {\begin{minipage}[b]{0.45\textwidth}{\Huge{\textbf{ND7PA}}\\
+\normalsize{Roger L. Traylor}} \end{minipage}}
+\put(80,57.5){\begin{minipage}[b]{0.45\textwidth}{\footnotesize{QRP ARCI 8417\\
+GQRP: 8396\\
+Grid Square: CN84jq\\
+Benton County, OR}} \end{minipage}}
+%                      border    background
+\put(77,2){\fcolorbox{white!80}{gray!10}{\parbox{0.4\linewidth}{\footnotesize{Photo: W7O/CE-009}}}}
+\put(0.05,-5){\begin{tabular}{| c | c | c | c | c | c | c | c |}
+  \hline
+  Station & Date &  Time (UTC) &  MHz &  Mode & RS(T) & Power &  QSL\\[4ex]
+  \hline
+\end{tabular}}
+\end{overpic}
+\end{minipage}\\
+\\
+\\
+\\
+\begin{minipage}[b]{0.25\textwidth}
+\begin{overpic}[height=3.75in,width=5.40in,scale=0.090,unit=0.05in]{CE-009.jpg}
+\put(1,60.5)  {\begin{minipage}[b]{0.45\textwidth}{\Huge{\textbf{ND7PA}}\\
+\normalsize{Roger L. Traylor}} \end{minipage}}
+\put(80,57.5){\begin{minipage}[b]{0.45\textwidth}{\footnotesize{QRP ARCI 8417\\
+GQRP: 8396\\
+Grid Square: CN84jq\\
+Benton County, OR}} \end{minipage}}
+%                      border    background
+\put(77,2){\fcolorbox{white!80}{gray!10}{\parbox{0.4\linewidth}{\footnotesize{Photo: W7O/CE-009}}}}
+\put(0.05,-5){\begin{tabular}{| c | c | c | c | c | c | c | c |}
+  \hline
+  Station & Date &  Time (UTC) &  MHz &  Mode & RS(T) & Power &  QSL\\[4ex]
+  \hline
+\end{tabular}}
+\end{overpic}
+\end{minipage}
+\hspace{2.67in}
+\begin{minipage}[b]{0.25\textwidth}
+\begin{overpic}[height=3.75in,width=5.40in,scale=0.090,unit=0.05in]{CE-009.jpg}
+\put(1,60.5)  {\begin{minipage}[b]{0.45\textwidth}{\Huge{\textbf{ND7PA}}\\
+\normalsize{Roger L. Traylor}} \end{minipage}}
+\put(80,57.5){\begin{minipage}[b]{0.45\textwidth}{\footnotesize{QRP ARCI 8417\\
+GQRP: 8396\\
+Grid Square: CN84jq\\
+Benton County, OR}} \end{minipage}}
+%                      border    background
+\put(77,2){\fcolorbox{white!80}{gray!10}{\parbox{0.4\linewidth}{\footnotesize{Photo: W7O/CE-009}}}}
+\put(0.05,-5){\begin{tabular}{| c | c | c | c | c | c | c | c |}
+  \hline
+  Station & Date &  Time (UTC) &  MHz &  Mode & RS(T) & Power &  QSL\\[4ex]
+  \hline
+\end{tabular}}
+\end{overpic}
+\end{minipage}
+
+
+
+
+\end{document}
